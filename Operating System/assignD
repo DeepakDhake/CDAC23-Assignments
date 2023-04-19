@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "Enter Number to check it is even or odd " num
+echo $num
+
+if (( `expr $num%2==0` ))
+then
+	echo "Even Number"
+else
+	echo "Odd Number"
+fi

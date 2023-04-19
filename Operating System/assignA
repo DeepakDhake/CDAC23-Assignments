@@ -1,0 +1,52 @@
+#!/bin/bash
+
+a=0
+while (( $a!=6))
+do
+read -p "Enter the operation to be performed:- 1.Add 2.Sub 3.Mul 4.Div 5.Mod 6.To Exit" input
+case $input in
+		"1")
+			echo "Enter A:- "
+			read a
+			echo "Enter B:- "
+			read b
+			echo "Addition:- "`expr $a + $b`
+		;;
+		"2")
+			echo "Enter A:- "
+			read a
+			echo "Enter B:- "
+			read b
+			echo "Substraction:- "`expr $a - $b`
+		;;
+		"3")
+			echo "Enter A:- "
+			read a
+			echo "Enter B:- "
+			read b
+			echo "Multiplication:- "`expr $a \* $b`
+		;;
+		"4")
+			echo "Enter A:- "
+			read a
+			echo "Enter B:- "
+			read b
+			echo "Divison:- "`expr $a / $b`
+		;;
+		"5")
+			echo "Enter A:- "
+			read a
+			echo "Enter B:- "
+			read b
+			echo "Modulus:- "`expr $a % $b`
+		;;
+		"6")	
+			exit
+			break;
+		;;
+		"*")
+			echo "Invalid Operation"
+		;;
+
+esac
+done

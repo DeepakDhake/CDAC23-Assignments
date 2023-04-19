@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+read -p "Enter A " a
+echo $a
+read -p "Enter B " b
+echo $b
+read -p "Enter C " c
+echo $c
+
+if (( $a > $b && $a > $c ))
+then
+	echo  $a "is greatest."
+elif (( $b > $c ))
+then
+	echo $b "is greatest."
+else
+	echo $c "is greatest."
+fi
