@@ -1,0 +1,16 @@
+1:create student class with rollno,name,address,email
+
+2:create array of students
+
+3:Menu Driven:  
+	1:add student  
+	2: edit address  
+	3: display
+
+Note:case 1:add Student
+ 		if student is duplicate then dont add in array.
+ 		identify using rollno.
+
+
+
+
