@@ -10,5 +10,3 @@ b: display all products
 c: show specific product by id
 d:show all product price >100
 e:accept category from user and show only matched products
-
-(Revise all theory session demos( abstract class ,abstract metohd ,interface))
