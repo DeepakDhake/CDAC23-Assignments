@@ -7,11 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyForm</title>
     <link rel="stylesheet" href="./Assign5.css">
+    <style>
+        tr{
+            text-align: left;
+        }
+    </style>
 </head>
 
-<body>
+<body bgcolor="violet" align="center">
     <form action="https://www.youtube.com/" method="post">
-        <table border="1" cellspacing="1" cellpadding="2" bgcolor="pink">
+        <table border="1" cellspacing="1" cellpadding="2" bgcolor="pink" align="center">
             <caption align="center">Employee Table</caption>
             <tr>
                 <td>
@@ -31,7 +36,7 @@
             </tr>
             <tr>
                 <td><label for="Dept">Department</label></td>
-                <td>
+                <td align="left">
                     <input type="radio" name="Dept" id="Admin">Admin<label for="Admin"></label><br>
                     <input type="radio" name="Dept" id="Hr">HR<label for="Hr"></label><br>
                     <input type="radio" name="Dept" id="Tech">Technical<label for="Tech"></label><br>
@@ -50,7 +55,7 @@
                 <td>
                     <label for="Programs">Training Programs Attended:</label>
                 </td>
-                <td>
+                <td align="left">
                     <input type="checkbox" name="Programs" id="Html">HTML/DHTML<label for="Html"></label><br>
                     <input type="checkbox" name="Programs" id="Java">JAVA<label for="Java"></label><br>
                     <input type="checkbox" name="Programs" id="CS">CLIENT/SERVER<label for="CS"></label><br>
@@ -58,8 +63,13 @@
                 </td>
             </tr>
             <tr>
-                <td><label for="ecode">Training Programs need to attend:</label> </td>
-                <td><input type="text" name="ecode" id="ecode"></td>
+                <td><label for="Training">Training Programs need to attend:</label> </td>
+                <td>
+                    <select name="Training" id="Training">
+                        <option value="Js">JAVASCRIPT</option>
+                        <option value="Jst">JSTRUTS</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -69,7 +79,10 @@
                     <a href="mailto:" id="Email">empinfo@patni.com</a>
                 </td>
             </tr>
-        </table>
+        </table><br>
+        <input type="submit" name="btn" id="btn" value="submit" style="border-radius: 10px; color: royalblue;">
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <input type="reset" name="btn" id="btn" value="reset" style="border-radius: 10px; color: saddlebrown;">
     </form>
 </body>
 
