@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyForm</title>
+    <link rel="stylesheet" href="./Assign5.css">
 </head>
-<body>
-        
 
+<body>
+    <form action="https://www.youtube.com/" method="post">
+        <table border="1" cellspacing="1" cellpadding="2" bgcolor="pink">
+            <caption align="center">Employee Table</caption>
+            <tr>
+                <td>
+                    <label for="nm">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="nm" id="nm" required autofocus minlength="3">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ecode">Employee Code:</label>
+                </td>
+                <td>
+                    <input type="text" name="ecode" id="ecode">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Dept">Department</label></td>
+                <td>
+                    <input type="radio" name="Dept" id="Admin">Admin<label for="Admin"></label><br>
+                    <input type="radio" name="Dept" id="Hr">HR<label for="Hr"></label><br>
+                    <input type="radio" name="Dept" id="Tech">Technical<label for="Tech"></label><br>
+                    <input type="radio" name="Dept" id="Acc">Accounts<label for="Acc"></label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dt">Date of Joining:</label> </td>
+                <td><input type="date" name="dt" id="dt"></td>
+            </tr>
+            <tr>
+                <td><label for="adr">Address:</label> </td>
+                <td><textarea name="adr" id="adr" rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Programs">Training Programs Attended:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="Programs" id="Html">HTML/DHTML<label for="Html"></label><br>
+                    <input type="checkbox" name="Programs" id="Java">JAVA<label for="Java"></label><br>
+                    <input type="checkbox" name="Programs" id="CS">CLIENT/SERVER<label for="CS"></label><br>
+                    <input type="checkbox" name="Programs" id=".net">HTML/DHTML<label for=".net"></label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ecode">Training Programs need to attend:</label> </td>
+                <td><input type="text" name="ecode" id="ecode"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Send the information At:</label>
+                </td>
+                <td>
+                    <a href="mailto:" id="Email">empinfo@patni.com</a>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
+
 </html>
