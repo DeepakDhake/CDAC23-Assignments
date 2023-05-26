@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+
+    <style>
+        #conn{
+            margin-left: 150px;
+        }
+        #desk{
+            margin-left: 150px;
+        }
+        .reason{
+            margin-left: 150px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <h2>Internet Usage Survey</h2>
+    <p>
+        This Survey is being conducted to help identify the Internet usage patterns of our customers. <br>
+        Please take a few moments to compelte and submit this short form.Thank you for your cooperation.
+    </p>
+    <form action="#">
+        <table cellspacing="50px">
+            <tr>
+                <td><label for="conn" >
+                        What type of Internet connection do you have ? <br>
+                        (Select One)
+                    </label>
+                </td>
+                <td>
+                    <select name="conn" id="conn">
+                        <option value="test">Select</option>
+                        <option value="Dial">Dial-up</option>
+                        <option value="Dsl">DSL</option>
+                        <option value="HSC">High Speed Cable</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="comp">
+                        What type of computer do you use most at home ?
+                    </label>
+                </td>
+                <td >
+                    <input type="radio" name="comp" id="desk" value="Desktop"> <label for="comp">Desktop</label>
+                    <input type="radio" name="comp" id="lap" value="Lappy"> <label for="comp">Laptop</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="reason">
+                        How would you describe your main reason for using the Internet ?
+                    </label>
+                    <td>
+                        <input type="radio" name="reason" id="work" class="reason"><label for="work">To do work-related activities</label><br>
+                        <input type="radio" name="reason" id="school" class="reason"><label for="school">To do school-related activities</label><br>
+                        <input type="radio" name="reason" id="fun" class="reason"><label for="fun">To do entertainment activities</label><br>
+                        <input type="radio" name="reason" id="other" class="reason"><label for="other">Other activities</label><br>
+                    </td>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+</body>
+
+</html>
