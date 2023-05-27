@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="black">
+    <fieldset
+        style="color: whitesmoke; text-align: left; border-radius: 10px; border: 5px solid rgb(93, 93, 231); width: 60%;">
+        <legend style="background-color:rgb(93, 93, 231); border-radius: 5px;">
+            Name and address
+        </legend>
+        <table cellpadding="10px">
+            <tbody>
+                <tr>
+                    <td style="text-align: right;">
+                        SSN:
+                    </td>
+                    <td>
+                        <input type="text" name="SS" id="SSN"> <span
+                            style="background-color: rgb(93, 93, 231); border-radius: 5px;">Fill in name and
+                            address</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">
+                        Full name:
+                    </td>
+                    <td>
+                        <input type="text" name="f_name" id="fname">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">
+                        Street and number:
+
+                    </td>
+                    <td>
+                        <input type="text" name="stdn" id="SN">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td style="text-align: right;">
+                        Postal code:
+                    </td>
+                    <td>
+                        <input type="text" name="Postal" id="ps">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">
+                        City:
+                    </td>
+                    <td>
+                        <input type="text" name="City" id="ct">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset><br>
+    <fieldset style="color: whitesmoke; border-radius: 10px;border: 5px solid rgb(93, 93, 231);width: 30%;">
+        <legend style="background-color:rgb(93, 93, 231); border-radius: 5px;">
+            Username and password
+        </legend>
+        <table cellpadding="10px" style="margin-left: 50px;">
+            <tr>
+                <td style="text-align: right;">
+                    Username:
+                </td>
+
+                <td>
+                    <input type="text" name="uname" id="show">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+
+                <td>
+                    <input type="text" name="pwd" id="passwd">
+                </td>
+            </tr>
+        </table><br>
+        <input type="checkbox" name="show" id="Showpass" value="show" style="margin-left: 80px;"><label for="show">showpassword</label>
+    </fieldset><br>
+</body>
+<button type="button" name="Reg" id="Register" style="margin-left: 50px;background-color: rgb(93, 93, 231);color: whitesmoke;">Register</button>
+
+</html>

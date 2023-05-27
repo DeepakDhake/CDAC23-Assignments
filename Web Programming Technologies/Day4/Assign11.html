@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        #mydiv {
+            text-align: left;
+            margin-right: 1200px;
+            padding-left: 100px;
+        }
+
+        span {
+            position: absolute;
+            left: 220px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(53, 100, 230);color: whitesmoke; ">
+    <form>
+        <fieldset>
+            <legend>Registration Details</legend><br>
+            <div id="mydiv">
+                University: <span><input type="text" name="university" id="Uni"></span><br><br>
+                Institute: <span><input type="text" name="institute" id="Inst"></span><br><br>
+                Branch: <span><select name="Branch" id="stream">
+                        <option value="test">---select---</option>
+                        <option value="Mech">Mechanical</option>
+                        <option value="IT">IT</option>
+                        <option value="Entc">ENTC</option>
+                        <option value="CS">Computer</option>
+                        <option value="civil">Civil</option>
+                    </select></span><br><br>
+                Degree: <span><select name="Degree" id="deg">
+                        <option value="test">---select---</option>
+                        <option value="BE">BE</option>
+                        <option value="BTech">BTECH</option>
+                        <option value="ME">ME</option>
+                        <option value="MTech">MTECH</option>
+                    </select>
+                    <input type="radio" name="Status" id="Ps" value="Pursuing"><label for="Ps">Pursuing</label>
+                    <input type="radio" name="Status" id="cmp" value="Completed"><label
+                        for="cmp">Completed</label></span><br><br>
+                Average CPI: <span><input type="number" name="Avg" min="5" max="10">
+                    Upto <input type="number" name="Sem" min="1" max="8"> Th Semester </span><br><br>
+                Experience: <span><input type="number" name="exp" min="0" max="10"> Years </span><br><br>
+                Your Website Or Blog: <span><input type="text" name="website" id="web"
+                        placeholder="http://"></span><br><br>
+        </fieldset>
+        </div><br><br>
+        <div align="center">
+            <button type="button" name="back" id="back">Back </button>
+            Step 2
+            <button type="button"> Next</button>
+        </div>
+    </form>
+</body>
+
+</html>
