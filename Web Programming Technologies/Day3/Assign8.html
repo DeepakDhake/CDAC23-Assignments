@@ -7,7 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
     <script>
+        var nm;
+        var data;
+        var mail;
+        function validateName() {
+            nm = document.getElementById("uname").value
+            if ((nm==="") || (nm.trim().length === 0)) {
+                document.getElementById("errname").innerHTML=" Please enter Username"
+                return false;
+            } else {
+                document.getElementById("errname").innerHTML=""
+                return true;
+            }    
+        }
 
+        function validateEmail() {
+            mail = document.getElementById("mail").value
+            if ((mail==="") ||(mail.trim().length === 0)) {
+                document.getElementById("errid").innerHTML = "Enter valid email id";
+                return false;
+            } else {
+                document.getElementById("errid").innerHTML = ""
+                return true;
+            }
+        }
+
+        function validateForm() {
+            var flag1 = validateName();
+            var flag2 = validateEmail();
+            if (flag1 && flag2) {
+            var str = "name: "+nm + "EmailId: "+mail;
+            document.getElementById("mydiv").innerHTML=str
+            }
+        }
     </script>
 </head>
 
@@ -17,7 +49,7 @@
     <ul align="center">
 
     </ul>
-    <form action="/submit-data" method="get">
+    <form>
         <table style="width: 60%;" align="center" cellspacing="25px">
             <tbody>
                 <tr>
@@ -32,11 +64,11 @@
                 </tr>
                 <tr>
                     <td><span style="color: red;">*</span>Username: </td>
-                    <td><input type="text" name="uname" id="uname"></td>
+                    <td><input type="text" name="uname" id="uname"><span name="errname" id="errname"></span></td>
                 </tr>
                 <tr>
                     <td><span style="color: red;">*</span>Email: </td>
-                    <td><input type="email" name="mail" id="mail"></td>
+                    <td><input type="email" name="mail" id="mail"><span name="errid" id="errid"></span></td>
                 </tr>
                 <tr>
                     <td><span style="color: red;">*</span>Location: </td>
@@ -59,10 +91,14 @@
             </tbody>
         </table><br>
         <div align="center">
-            <button type="submit">Submit form</button>&ensp;&ensp;
+            <button type="submit" onclick="validateForm()">Submit form</button>&ensp;&ensp;
             <button type="reset">Clear form</button>
         </div>
     </form>
+
+    <div id="mydiv">
+
+    </div>
 </body>
 
 </html>
