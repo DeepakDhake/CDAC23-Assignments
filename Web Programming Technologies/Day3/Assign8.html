@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <script>
+        
+    </script>
+</head>
+
+<body>
+    <h1 align="center">Online Feedback Form</h1>
+    <h2 align="center">Send Us Your Feedback!</h2>
+    <ul align="center">
+
+    </ul>
+    <form action="/submit-data" method="get">
+        <table style="width: 60%;" align="center" cellspacing="25px">
+            <tbody>
+                <tr>
+                    <td>
+                        <span style="color: red;">*</span>Type of Problem:
+                    </td>
+                    <td><textarea name="problem" id="problem" cols="40" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><span style="color: red;">*</span>Username: </td>
+                    <td><input type="text" name="uname" id="uname"></td>
+                </tr>
+                <tr>
+                    <td><span style="color: red;">*</span>Email: </td>
+                    <td><input type="email" name="mail" id="mail"></td>
+                </tr>
+                <tr>
+                    <td><span style="color: red;">*</span>Location: </td>
+                    <td><input type="text" name="loc" id="loc"></td>
+                </tr>
+                <tr>
+                    <td>Phone: </td>
+                    <td><input type="tel" name="phone" id="phone"></td>
+                </tr>
+                <tr>
+                    <td><span style="color: red;">*</span>Description of the problem</td>
+                    <td><textarea name="desc" id="desc" cols="40" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Notification of problem solved: </td>
+                    <td><input type="radio" name="solved" id="yes" value="yes">Yes
+                        <input type="radio" name="solved" id="no" value="no">No
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div align="center">
+            <button type="submit">Submit form</button>&ensp;&ensp;
+            <button type="reset">Clear form</button>
+        </div>
+    </form>
+</body>
+
+</html>
