@@ -24,7 +24,7 @@
         function validateEmail() {
             mail = document.getElementById("mail").value
             if ((mail==="") ||(mail.trim().length === 0)) {
-                document.getElementById("errid").innerHTML = "Enter valid email id";
+                document.getElementById("errid").innerHTML = " Enter valid email id";
                 return false;
             } else {
                 document.getElementById("errid").innerHTML = ""
@@ -36,7 +36,7 @@
             var flag1 = validateName();
             var flag2 = validateEmail();
             if (flag1 && flag2) {
-            var str = "name: "+nm + "EmailId: "+mail;
+            var str = "name: "+nm + " EmailId: "+mail;
             document.getElementById("mydiv").innerHTML=str
             }
         }
