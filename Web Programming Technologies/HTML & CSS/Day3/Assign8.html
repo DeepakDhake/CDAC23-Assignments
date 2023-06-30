@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
     <script>
         var nm;
         var data;
@@ -54,7 +59,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <span style="color: red;">*</span>Type of Problem:
+                        <span>*</span>Type of Problem:
                     </td>
                     <td>
                         <input type="radio" name="prob" id="Tech" value="tech"> Technical <br>
@@ -63,15 +68,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><span style="color: red;">*</span>Username: </td>
+                    <td><span>*</span>Username: </td>
                     <td><input type="text" name="uname" id="uname"><span name="errname" id="errname"></span></td>
                 </tr>
                 <tr>
-                    <td><span style="color: red;">*</span>Email: </td>
+                    <td><span>*</span>Email: </td>
                     <td><input type="email" name="mail" id="mail"><span name="errid" id="errid"></span></td>
                 </tr>
                 <tr>
-                    <td><span style="color: red;">*</span>Location: </td>
+                    <td><span>*</span>Location: </td>
                     <td><input type="text" name="loc" id="loc"></td>
                 </tr>
                 <tr>
@@ -79,7 +84,7 @@
                     <td><input type="tel" name="phone" id="phone"></td>
                 </tr>
                 <tr>
-                    <td><span style="color: red;">*</span>Description of the problem</td>
+                    <td><span>*</span>Description of the problem</td>
                     <td><textarea name="desc" id="desc" cols="40" rows="5"></textarea></td>
                 </tr>
                 <tr>
@@ -91,7 +96,7 @@
             </tbody>
         </table><br>
         <div align="center">
-            <button type="submit" onclick="validateForm()">Submit form</button>&ensp;&ensp;
+            <button type="button" onclick="validateForm()">Submit form</button>&ensp;&ensp;
             <button type="reset">Clear form</button>
         </div>
     </form>
