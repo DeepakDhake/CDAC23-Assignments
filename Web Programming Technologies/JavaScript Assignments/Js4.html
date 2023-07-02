@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var num1, num2, ans, oper;
+        function calculate() {
+            num1 = parseInt(document.getElementById('n1').value)
+            num2 = parseInt(document.getElementById('n2').value)
+            oper = document.getElementById('oper').value;
+            switch (oper) {
+                case '+':
+                    ans = num1 + num2;
+                    document.getElementById('res').value = ans;
+                    break;
+                case '-':
+                    ans = num1 - num2;
+                    document.getElementById('res').value = ans;
+                    break;
+                case '*':
+                    ans = num1 * num2;
+                    document.getElementById('res').value = ans;
+                    break;
+                case '/':
+                    ans = num1 / num2;
+                    document.getElementById('res').value = ans;
+                    break;
+                default:
+                    document.getElementById('res').value = "Not a valid Operator";
+                    break;
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Number 1:
+                </td>
+                <td>
+                    <input type="text" name="num1" id="n1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Number 2:
+                </td>
+                <td>
+                    <input type="text" name="num2" id="n2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select Operator:
+                </td>
+                <td>
+                    <input type="text" name="op" id="oper" placeholder="+,-,*,/">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Result:
+                </td>
+                <td>
+                    <input type="text" name="res" id="res" readonly>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div>
+        <br>&ensp;&ensp;<button type="submit" name="btn" id="btn" value="oper" onclick="calculate()">Calculate</button>
+    </div>
+</body>
+
+</html>
