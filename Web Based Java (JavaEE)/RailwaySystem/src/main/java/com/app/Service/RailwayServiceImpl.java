@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.Entities.Railway;
+import com.app.Entities.TrainCategory;
 import com.app.Repository.RailwayRepository;
 
 @Service
@@ -51,6 +52,18 @@ public class RailwayServiceImpl implements RailwayService {
 			return mesg = "Train with " + trainId + " Deleted";
 		}
 		return mesg;
+	}
+
+	@Override
+	public List<Railway> getTrainByCat(TrainCategory cName) {
+		// TODO Auto-generated method stub
+		return railRepo.findByCategory(cName);
+	}
+
+	@Override
+	public Railway UpdateTrainData(Railway upTrain) {
+		// TODO Auto-generated method stub
+		return railRepo.save(upTrain);
 	}
 
 }
