@@ -1,5 +1,6 @@
 package com.app.Entities;
 
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 import javax.persistence.Column;
@@ -11,10 +12,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.validator.constraints.Range;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.datatype.jsr310.deser.LocalTimeDeserializer;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -39,12 +40,11 @@ public class Railway {
 	@Column(name = "Train_Category", nullable = false, length = 20)
 	@Enumerated(EnumType.STRING)
 	private TrainCategory Category;
+//	@CreationTimestamp
 	@Column(name = "Start_Time", nullable = false)
-	@JsonDeserialize(using = LocalTimeDeserializer.class)
-	private LocalTime startTime;
+	private LocalDateTime startTime;
 	@Column(name = "End_Time", nullable = false)
-	@JsonDeserialize(using = LocalTimeDeserializer.class)
-	private LocalTime endTime;
+	private LocalDateTime endTime;
 	@Column(name = "Source_Station", nullable = false, length = 20)
 	private String Source;
 	@Column(name = "Destination_Station", nullable = false, length = 20)
