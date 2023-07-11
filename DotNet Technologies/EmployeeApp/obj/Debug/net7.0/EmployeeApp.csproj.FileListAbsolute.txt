@@ -1,0 +1,15 @@
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\bin\Debug\net7.0\EmployeeApp.exe
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\bin\Debug\net7.0\EmployeeApp.deps.json
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\bin\Debug\net7.0\EmployeeApp.runtimeconfig.json
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\bin\Debug\net7.0\EmployeeApp.dll
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\bin\Debug\net7.0\EmployeeApp.pdb
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\EmployeeApp.csproj.AssemblyReference.cache
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\EmployeeApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\EmployeeApp.AssemblyInfoInputs.cache
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\EmployeeApp.AssemblyInfo.cs
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\EmployeeApp.csproj.CoreCompileInputs.cache
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\EmployeeApp.dll
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\refint\EmployeeApp.dll
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\EmployeeApp.pdb
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\EmployeeApp.genruntimeconfig.cache
+D:\Git\CDAC23-Assignments\DotNet Technologies\EmployeeApp\obj\Debug\net7.0\ref\EmployeeApp.dll
