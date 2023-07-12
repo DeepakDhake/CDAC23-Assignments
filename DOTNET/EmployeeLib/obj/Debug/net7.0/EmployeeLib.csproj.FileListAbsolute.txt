@@ -1,0 +1,12 @@
+G:\Deepak_Sahil\DOTNET\EmployeeLib\obj\Debug\net7.0\EmployeeLib.csproj.AssemblyReference.cache
+G:\Deepak_Sahil\DOTNET\EmployeeLib\obj\Debug\net7.0\EmployeeLib.GeneratedMSBuildEditorConfig.editorconfig
+G:\Deepak_Sahil\DOTNET\EmployeeLib\obj\Debug\net7.0\EmployeeLib.AssemblyInfoInputs.cache
+G:\Deepak_Sahil\DOTNET\EmployeeLib\obj\Debug\net7.0\EmployeeLib.AssemblyInfo.cs
+G:\Deepak_Sahil\DOTNET\EmployeeLib\obj\Debug\net7.0\EmployeeLib.csproj.CoreCompileInputs.cache
+G:\Deepak_Sahil\DOTNET\EmployeeLib\bin\Debug\net7.0\EmployeeLib.deps.json
+G:\Deepak_Sahil\DOTNET\EmployeeLib\bin\Debug\net7.0\EmployeeLib.dll
+G:\Deepak_Sahil\DOTNET\EmployeeLib\bin\Debug\net7.0\EmployeeLib.pdb
+G:\Deepak_Sahil\DOTNET\EmployeeLib\obj\Debug\net7.0\EmployeeLib.dll
+G:\Deepak_Sahil\DOTNET\EmployeeLib\obj\Debug\net7.0\refint\EmployeeLib.dll
+G:\Deepak_Sahil\DOTNET\EmployeeLib\obj\Debug\net7.0\EmployeeLib.pdb
+G:\Deepak_Sahil\DOTNET\EmployeeLib\obj\Debug\net7.0\ref\EmployeeLib.dll
