@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CalculatorApp/1.0.0": {
+        "dependencies": {
+          "MathsLib": "1.0.0"
+        },
+        "runtime": {
+          "CalculatorApp.dll": {}
+        }
+      },
+      "MathsLib/1.0.0": {
+        "runtime": {
+          "MathsLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CalculatorApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MathsLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
