@@ -1,8 +1,15 @@
 ﻿using EmployeeLib;
+using static TaxLib.Delegatee;
+using TaxLib;
+
 Console.WriteLine("*****Welcome To*****");
 int choice;
 List<Employee> empList = new List<Employee>();
-do{
+TaxCalculate taxCalculate = new TaxCalculate();
+TaxManager opr1 = new TaxManager(taxCalculate.PayIncomeTax);
+TaxManager opr2 = new TaxManager(taxCalculate.PayServiceTax);
+do
+{
 Console.WriteLine("Select option 1.Add Employee 2.Display All Employee 3.Total Expenditure to Company 4.Calculate Salary 5.Increase Salary");
 choice = Convert.ToInt32(Console.ReadLine());
     switch (choice)
@@ -64,15 +71,46 @@ choice = Convert.ToInt32(Console.ReadLine());
             }
             break;
         case 4:
+            Console.WriteLine("Enter your Id to calculate salary: ");
+            int eid = Convert.ToInt32(Console.ReadLine());
+            foreach (Employee emp in empList)
+            {
+                if (eid == emp.empId)
+                {
+                    if (emp.GetType() == typeof(HR))
+                    {
+                        Console.WriteLine(opr1(emp.computeSalary()));
+                        break;
+                    }
+                    else if (emp.GetType() == typeof(SalesManager))
+                    {
+                        Console.WriteLine(opr2(emp.computeSalary()));
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine(opr1(emp.computeSalary()));
+                        break;
+                    }
+                }
+            }
             break;
         case 5:
-            break;
+            Console.WriteLine("Enter the Id to Increment salary: ");
+            int eId = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the amount by which you want to increase salary ");
+            double amount = Convert.ToDouble(Console.ReadLine());
+            foreach (Employee emp in empList)
+            {
+                if (eId == emp.empId)
+                {
+                    emp.manageTax += taxCalculate.PayIncomeTax;
+                    emp.IncSal(amount);
+                    break;
+                }
+            }
+                break;
         case 6:
-
-            break;
-        case 7:
-            break;
-        case 8:
             break;
         default:
             Console.WriteLine("Invalid Input");
