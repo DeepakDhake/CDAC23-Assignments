@@ -2,7 +2,7 @@
 using static TaxLib.Delegatee;
 using TaxLib;
 
-Console.WriteLine("*****Welcome To*****");
+Console.WriteLine("*****Welcome To Company*****");
 int choice;
 List<Employee> empList = new List<Employee>();
 TaxCalculate taxCalculate = new TaxCalculate();
@@ -10,8 +10,8 @@ TaxManager opr1 = new TaxManager(taxCalculate.PayIncomeTax);
 TaxManager opr2 = new TaxManager(taxCalculate.PayServiceTax);
 do
 {
-Console.WriteLine("Select option 1.Add Employee 2.Display All Employee 3.Total Expenditure to Company 4.Calculate Salary 5.Increase Salary");
-choice = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Select option 1.Add Employee 2.Display All Employee 3.Total Expenditure to Company 4.Calculate Salary 5.Increase Salary 0.To Exit");
+    choice = Convert.ToInt32(Console.ReadLine());
     switch (choice)
     {
         case 0:
@@ -22,7 +22,7 @@ choice = Convert.ToInt32(Console.ReadLine());
             int choice2 = Convert.ToInt32(Console.ReadLine());
             if (choice2 == 1)
             {
-                Console.WriteLine("EmpId, Name, City, State, Salary, Department, Bonus");
+                Console.WriteLine("EmpId, Name, City, State, Salary, Bonus");
                 HR h1 = new(Convert.ToInt32(Console.ReadLine()),
                                Console.ReadLine(),
                                new DateOnly(2023, 10, 30),
@@ -37,7 +37,7 @@ choice = Convert.ToInt32(Console.ReadLine());
             }
             else if (choice2 == 2)
             {
-                Console.WriteLine("EmpId, Name, City, State, Salary, Department, Bonus");
+                Console.WriteLine("EmpId, Name, City, State, Salary, Bonus");
                 SalesManager s1 = new(
                     Convert.ToInt32(Console.ReadLine()),
                     Console.ReadLine(),
@@ -63,12 +63,12 @@ choice = Convert.ToInt32(Console.ReadLine());
             }
             break;
         case 3:
-            Console.WriteLine("Total Expenditure of Company");
             double cost = 0;
             foreach (Employee e in empList)
             {
                 cost += e.computeSalary();
             }
+            Console.WriteLine("Total Expenditure of Company Rs." + cost);
             break;
         case 4:
             Console.WriteLine("Enter your Id to calculate salary: ");
@@ -109,11 +109,9 @@ choice = Convert.ToInt32(Console.ReadLine());
                     break;
                 }
             }
-                break;
-        case 6:
             break;
         default:
             Console.WriteLine("Invalid Input");
             break;
     }
-}while(choice != 0);
+} while (choice != 0);
