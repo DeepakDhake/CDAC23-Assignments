@@ -1,0 +1,12 @@
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\bin\Debug\net7.0\TaxLib.deps.json
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\bin\Debug\net7.0\TaxLib.dll
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\bin\Debug\net7.0\TaxLib.pdb
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\obj\Debug\net7.0\TaxLib.csproj.AssemblyReference.cache
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\obj\Debug\net7.0\TaxLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\obj\Debug\net7.0\TaxLib.AssemblyInfoInputs.cache
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\obj\Debug\net7.0\TaxLib.AssemblyInfo.cs
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\obj\Debug\net7.0\TaxLib.csproj.CoreCompileInputs.cache
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\obj\Debug\net7.0\TaxLib.dll
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\obj\Debug\net7.0\refint\TaxLib.dll
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\obj\Debug\net7.0\TaxLib.pdb
+D:\Git\CDAC23-Assignments\DOTNET\companyApp\TaxLib\obj\Debug\net7.0\ref\TaxLib.dll

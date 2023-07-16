@@ -1,0 +1,153 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "BankingLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/BankingLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankingLib.dll": {}
+        }
+      },
+      "EmployeeLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/EmployeeLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmployeeLib.dll": {}
+        }
+      },
+      "PolicyLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/PolicyLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PolicyLib.dll": {}
+        }
+      },
+      "TaxLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/TaxLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaxLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BankingLib/1.0.0": {
+      "type": "project",
+      "path": "../BankingLib/BankingLib.csproj",
+      "msbuildProject": "../BankingLib/BankingLib.csproj"
+    },
+    "EmployeeLib/1.0.0": {
+      "type": "project",
+      "path": "../EmployeeLib/EmployeeLib.csproj",
+      "msbuildProject": "../EmployeeLib/EmployeeLib.csproj"
+    },
+    "PolicyLib/1.0.0": {
+      "type": "project",
+      "path": "../PolicyLib/PolicyLib.csproj",
+      "msbuildProject": "../PolicyLib/PolicyLib.csproj"
+    },
+    "TaxLib/1.0.0": {
+      "type": "project",
+      "path": "../TaxLib/TaxLib.csproj",
+      "msbuildProject": "../TaxLib/TaxLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "BankingLib >= 1.0.0",
+      "EmployeeLib >= 1.0.0",
+      "PolicyLib >= 1.0.0",
+      "TaxLib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Sai\\.nuget\\packages\\": {},
+    "D:\\software\\Visual Studio\\Visual Studio Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\companyApp\\companyAppConsole.csproj",
+      "projectName": "companyAppConsole",
+      "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\companyApp\\companyAppConsole.csproj",
+      "packagesPath": "C:\\Users\\Sai\\.nuget\\packages\\",
+      "outputPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\companyApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\software\\Visual Studio\\Visual Studio Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Sai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\BankingLib\\BankingLib.csproj": {
+              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\BankingLib\\BankingLib.csproj"
+            },
+            "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\EmployeeLib\\EmployeeLib.csproj": {
+              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\EmployeeLib\\EmployeeLib.csproj"
+            },
+            "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\PolicyLib\\PolicyLib.csproj": {
+              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\PolicyLib\\PolicyLib.csproj"
+            },
+            "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\TaxLib\\TaxLib.csproj": {
+              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\TaxLib\\TaxLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
