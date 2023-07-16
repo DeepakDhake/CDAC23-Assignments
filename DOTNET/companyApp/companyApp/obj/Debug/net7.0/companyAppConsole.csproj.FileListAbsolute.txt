@@ -28,12 +28,8 @@ D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\obj\Debug\net7.0\refint\c
 D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\obj\Debug\net7.0\companyAppConsole.pdb
 D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\obj\Debug\net7.0\companyAppConsole.genruntimeconfig.cache
 D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\obj\Debug\net7.0\ref\companyAppConsole.dll
-D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\bin\Debug\net7.0\BankingLib.dll
 D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\bin\Debug\net7.0\EmployeeLib.dll
-D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\bin\Debug\net7.0\PolicyLib.dll
 D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\bin\Debug\net7.0\TaxLib.dll
-D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\bin\Debug\net7.0\BankingLib.pdb
 D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\bin\Debug\net7.0\EmployeeLib.pdb
-D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\bin\Debug\net7.0\PolicyLib.pdb
 D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\bin\Debug\net7.0\TaxLib.pdb
 D:\Git\CDAC23-Assignments\DOTNET\companyApp\companyApp\obj\Debug\net7.0\companyAppConsole.csproj.CopyComplete

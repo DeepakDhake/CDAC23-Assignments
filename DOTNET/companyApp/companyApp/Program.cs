@@ -3,7 +3,7 @@ Console.WriteLine("*****Welcome To*****");
 int choice;
 List<Employee> empList = new List<Employee>();
 do{
-Console.WriteLine("Select option 1.Add Employee 2.Display All Employee 3.");
+Console.WriteLine("Select option 1.Add Employee 2.Display All Employee 3.Total Expenditure to Company 4.Calculate Salary 5.Increase Salary");
 choice = Convert.ToInt32(Console.ReadLine());
     switch (choice)
     {
@@ -11,7 +11,7 @@ choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("*****Thank You*****");
             break;
         case 1:
-            Console.WriteLine("Select 1.To add HR Employee 2.To add to add SalesManager");
+            Console.WriteLine("Select 1.To add HR Employee 2.To add to add SalesManager 3.Calculate Salary 0.To Exit");
             int choice2 = Convert.ToInt32(Console.ReadLine());
             if (choice2 == 1)
             {
@@ -44,14 +44,24 @@ choice = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("SalesManager Added Successfully");
                 break;
             }
-            break;
+            else
+            {
+                Console.WriteLine("Enter Valid Input");
+                break;
+            }
         case 2:
             foreach (Employee e in empList)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(e + "\n");
             }
             break;
         case 3:
+            Console.WriteLine("Total Expenditure of Company");
+            double cost = 0;
+            foreach (Employee e in empList)
+            {
+                cost += e.computeSalary();
+            }
             break;
         case 4:
             break;

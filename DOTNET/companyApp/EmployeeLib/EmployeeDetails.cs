@@ -1,4 +1,7 @@
-﻿namespace EmployeeLib
+﻿using TaxLib;
+using static TaxLib.Delegatee;
+
+namespace EmployeeLib
 {
     public partial class Employee
     {
@@ -7,7 +10,7 @@
         public DateOnly dob { get; set; }
         public double salary { get; set; }
         public Dept department { get; set; }
-
+        public event TaxManager manageTax; 
         public Employee(int empId,string name, DateOnly dob, string city, string state, double salary, Dept department) 
         {
             this.empId = empId;
@@ -27,6 +30,15 @@
         public virtual double computeSalary()
         {
             return this.salary;
+        }
+
+        public void IncSal(double sal)
+        {
+            this.salary += sal;
+            if (this.salary > 50000)
+            {
+                this.salary = manageTax(this.salary);
+            }
         }
 
     }

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "EmployeeLib/1.0.0": {
+        "dependencies": {
+          "TaxLib": "1.0.0"
+        },
         "runtime": {
           "EmployeeLib.dll": {}
+        }
+      },
+      "TaxLib/1.0.0": {
+        "runtime": {
+          "TaxLib.dll": {}
         }
       }
     }
   },
   "libraries": {
     "EmployeeLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TaxLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

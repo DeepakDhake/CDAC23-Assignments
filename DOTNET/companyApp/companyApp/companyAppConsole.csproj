@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BankingLib\BankingLib.csproj" />
     <ProjectReference Include="..\EmployeeLib\EmployeeLib.csproj" />
-    <ProjectReference Include="..\PolicyLib\PolicyLib.csproj" />
     <ProjectReference Include="..\TaxLib\TaxLib.csproj" />
   </ItemGroup>
 

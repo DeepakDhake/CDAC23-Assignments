@@ -2,34 +2,17 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "BankingLib/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/BankingLib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BankingLib.dll": {}
-        }
-      },
       "EmployeeLib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "TaxLib": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/EmployeeLib.dll": {}
         },
         "runtime": {
           "bin/placeholder/EmployeeLib.dll": {}
-        }
-      },
-      "PolicyLib/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/PolicyLib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PolicyLib.dll": {}
         }
       },
       "TaxLib/1.0.0": {
@@ -45,20 +28,10 @@
     }
   },
   "libraries": {
-    "BankingLib/1.0.0": {
-      "type": "project",
-      "path": "../BankingLib/BankingLib.csproj",
-      "msbuildProject": "../BankingLib/BankingLib.csproj"
-    },
     "EmployeeLib/1.0.0": {
       "type": "project",
       "path": "../EmployeeLib/EmployeeLib.csproj",
       "msbuildProject": "../EmployeeLib/EmployeeLib.csproj"
-    },
-    "PolicyLib/1.0.0": {
-      "type": "project",
-      "path": "../PolicyLib/PolicyLib.csproj",
-      "msbuildProject": "../PolicyLib/PolicyLib.csproj"
     },
     "TaxLib/1.0.0": {
       "type": "project",
@@ -68,9 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "BankingLib >= 1.0.0",
       "EmployeeLib >= 1.0.0",
-      "PolicyLib >= 1.0.0",
       "TaxLib >= 1.0.0"
     ]
   },
@@ -106,14 +77,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\BankingLib\\BankingLib.csproj": {
-              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\BankingLib\\BankingLib.csproj"
-            },
             "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\EmployeeLib\\EmployeeLib.csproj": {
               "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\EmployeeLib\\EmployeeLib.csproj"
-            },
-            "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\PolicyLib\\PolicyLib.csproj": {
-              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\PolicyLib\\PolicyLib.csproj"
             },
             "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\TaxLib\\TaxLib.csproj": {
               "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\companyApp\\TaxLib\\TaxLib.csproj"

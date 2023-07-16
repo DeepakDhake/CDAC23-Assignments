@@ -8,28 +8,19 @@
     ".NETCoreApp,Version=v7.0": {
       "companyAppConsole/1.0.0": {
         "dependencies": {
-          "BankingLib": "1.0.0",
           "EmployeeLib": "1.0.0",
-          "PolicyLib": "1.0.0",
           "TaxLib": "1.0.0"
         },
         "runtime": {
           "companyAppConsole.dll": {}
         }
       },
-      "BankingLib/1.0.0": {
-        "runtime": {
-          "BankingLib.dll": {}
-        }
-      },
       "EmployeeLib/1.0.0": {
+        "dependencies": {
+          "TaxLib": "1.0.0"
+        },
         "runtime": {
           "EmployeeLib.dll": {}
-        }
-      },
-      "PolicyLib/1.0.0": {
-        "runtime": {
-          "PolicyLib.dll": {}
         }
       },
       "TaxLib/1.0.0": {
@@ -45,17 +36,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BankingLib/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "EmployeeLib/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "PolicyLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
