@@ -28,16 +28,22 @@ namespace EmployeeWebApp.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Login(string email, string password)
+        {
+            return RedirectToAction("Welcome");
+        }
+
         public IActionResult Register()
         {
             return View();
         }
 
-        /*[HttpPost]
-        public IActionResult Register()
+        [HttpPost]
+        public IActionResult Register(int id, string firstName, string lastName, double salary, string city, string email, string password)
         {
-            return View();
-        }*/
+            return RedirectToAction("Welcome");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
