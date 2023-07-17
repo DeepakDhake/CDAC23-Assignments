@@ -31,7 +31,16 @@ namespace EmployeeWebApp.Controllers
         [HttpPost]
         public IActionResult Login(string email, string password)
         {
+            if (email == "aa@gmail.com" && password == "12345")
+            {
             return RedirectToAction("Welcome");
+            }
+            return View(); 
+        }
+
+        public IActionResult Welcome()
+        {
+            return View();
         }
 
         public IActionResult Register()
