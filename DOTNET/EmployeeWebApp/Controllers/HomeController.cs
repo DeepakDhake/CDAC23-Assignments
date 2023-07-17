@@ -51,6 +51,7 @@ namespace EmployeeWebApp.Controllers
         [HttpPost]
         public IActionResult Register(int id, string firstName, string lastName, double salary, string city, string email, string password)
         {
+            List<Employee> employees = new List<Employee>();
             Employee emp = new Employee();
             emp.id = id;
             emp.firstName = firstName;
@@ -59,6 +60,8 @@ namespace EmployeeWebApp.Controllers
             emp.city = city;
             emp.email = email;
             emp.password = password;
+            employees.Add(emp);
+            //Json(employees);
             return RedirectToAction("Welcome");
         }
 
