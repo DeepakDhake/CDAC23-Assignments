@@ -33,7 +33,7 @@ namespace EmployeeWebApp.Controllers
         {
             if (email == "aa@gmail.com" && password == "12345")
             {
-            return RedirectToAction("Welcome");
+                return RedirectToAction("Welcome");
             }
             return View(); 
         }
@@ -51,7 +51,20 @@ namespace EmployeeWebApp.Controllers
         [HttpPost]
         public IActionResult Register(int id, string firstName, string lastName, double salary, string city, string email, string password)
         {
+            Employee emp = new Employee();
+            emp.id = id;
+            emp.firstName = firstName;
+            emp.lastName = lastName;
+            emp.salary = salary;
+            emp.city = city;
+            emp.email = email;
+            emp.password = password;
             return RedirectToAction("Welcome");
+        }
+
+        public IActionResult List()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
