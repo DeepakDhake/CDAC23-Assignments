@@ -2,12 +2,12 @@
 {
     public class Employee
     {
-        public int id { get; set; }
-        public string firstName { get; set; }
-        public string lastName { get; set; }
+        public int id { get; set; } = 0;
+        public string firstName { get; set; } = string.Empty;
+        public string lastName { get; set; } = string.Empty;
         public double salary { get; set; }
-        public string city { get; set; }
-        public string email { get; set; }
-        public string password { get; set; }
+        public string city { get; set; } = string.Empty;
+        public string email { get; set; } = string.Empty;
+        public string password { get; set; } = string.Empty;
     }
 }
