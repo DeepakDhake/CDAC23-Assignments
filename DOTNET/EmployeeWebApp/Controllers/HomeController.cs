@@ -64,6 +64,8 @@ namespace EmployeeWebApp.Controllers
             emp.email = email;
             emp.password = password;
             employees.Add(emp);
+            var fileName = "EmployeeList.json";
+            //var filePath = Path.Combine(Environment.CurrentDirectory, fileName);
             var filePath = "D:\\Git\\CDAC23-Assignments\\DOTNET\\EmployeeWebApp\\EmployeeList.json";
             var json = JsonConvert.SerializeObject(employees);
             System.IO.File.WriteAllText(filePath, json);
@@ -72,11 +74,13 @@ namespace EmployeeWebApp.Controllers
             public IActionResult List()
         {
             var filePath = "D:\\Git\\CDAC23-Assignments\\DOTNET\\EmployeeWebApp\\EmployeeList.json";
+            //var fileName = "EmployeeList.json";
+            //var filePath = Path.Combine(Environment.CurrentDirectory, fileName);
             if (System.IO.File.Exists(filePath))
             {
                 var json = System.IO.File.ReadAllText(filePath);
-                var empolyees = JsonConvert.DeserializeObject<List<Employee>>(json);
-                return View(employees);
+                var empol = JsonConvert.DeserializeObject<List<Employee>>(json);
+                return View(empol);
             }
             return View(new List<Employee>());
         }
