@@ -535,19 +535,6 @@
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {}
         }
-      },
-      "BLL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "MySql.Data": "8.1.0"
-        },
-        "compile": {
-          "bin/placeholder/BLL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BLL.dll": {}
-        }
       }
     }
   },
@@ -1783,16 +1770,10 @@
         "zstdsharp.port.0.7.1.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
-    },
-    "BLL/1.0.0": {
-      "type": "project",
-      "path": "../Employee/BLL.csproj",
-      "msbuildProject": "../Employee/BLL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "BLL >= 1.0.0",
       "MySql.Data >= 8.1.0"
     ]
   },
@@ -1803,11 +1784,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\DBConnection.csproj",
-      "projectName": "DBConnection",
-      "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\DBConnection.csproj",
+      "projectUniqueName": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj",
+      "projectName": "BLL",
+      "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj",
       "packagesPath": "C:\\Users\\Sai\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\obj\\",
+      "outputPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\software\\Visual Studio\\Visual Studio Shared\\NuGetPackages"
@@ -1827,11 +1808,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj": {
-              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

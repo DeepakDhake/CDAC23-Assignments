@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\DBConnection.csproj": {}
+    "D:\\Git\\CDAC23-Assignments\\DOTNET\\EmployeeWebApplication\\EmployeeWebApplication.csproj": {}
   },
   "projects": {
-    "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\DBConnection.csproj": {
+    "D:\\Git\\CDAC23-Assignments\\DOTNET\\EmployeeWebApplication\\EmployeeWebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\DBConnection.csproj",
-        "projectName": "DBConnection",
-        "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\DBConnection.csproj",
+        "projectUniqueName": "D:\\Git\\CDAC23-Assignments\\DOTNET\\EmployeeWebApplication\\EmployeeWebApplication.csproj",
+        "projectName": "EmployeeWebApplication",
+        "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\EmployeeWebApplication\\EmployeeWebApplication.csproj",
         "packagesPath": "C:\\Users\\Sai\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\obj\\",
+        "outputPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\EmployeeWebApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\software\\Visual Studio\\Visual Studio Shared\\NuGetPackages"
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj": {
-                "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj"
+              "D:\\Git\\CDAC23-Assignments\\DOTNET\\Product\\BLL.csproj": {
+                "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Product\\BLL.csproj"
               }
             }
           }
@@ -65,6 +66,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -73,14 +77,14 @@
         }
       }
     },
-    "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj": {
+    "D:\\Git\\CDAC23-Assignments\\DOTNET\\Product\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj",
+        "projectUniqueName": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Product\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj",
+        "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Product\\BLL.csproj",
         "packagesPath": "C:\\Users\\Sai\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\obj\\",
+        "outputPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Product\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\software\\Visual Studio\\Visual Studio Shared\\NuGetPackages"
