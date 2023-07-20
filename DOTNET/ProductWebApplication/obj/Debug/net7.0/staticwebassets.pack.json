@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "D:\\Git\\CDAC23-Assignments\\DOTNET\\ProductWebApplication\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ProductWebApplication.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ProductWebApplication.bundle.scp.css"
+      "Id": "D:\\Git\\CDAC23-Assignments\\DOTNET\\ProductWebApplication\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\EmployeeWebApplication.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EmployeeWebApplication.bundle.scp.css"
     },
     {
       "Id": "D:\\Git\\CDAC23-Assignments\\DOTNET\\ProductWebApplication\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ProductWebApplication.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EmployeeWebApplication.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ProductWebApplication.props",
-      "PackagePath": "build\\ProductWebApplication.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.EmployeeWebApplication.props",
+      "PackagePath": "build\\EmployeeWebApplication.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductWebApplication.props",
-      "PackagePath": "buildMultiTargeting\\ProductWebApplication.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.EmployeeWebApplication.props",
+      "PackagePath": "buildMultiTargeting\\EmployeeWebApplication.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ProductWebApplication.props",
-      "PackagePath": "buildTransitive\\ProductWebApplication.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.EmployeeWebApplication.props",
+      "PackagePath": "buildTransitive\\EmployeeWebApplication.props"
     }
   ],
   "ElementsToRemove": []

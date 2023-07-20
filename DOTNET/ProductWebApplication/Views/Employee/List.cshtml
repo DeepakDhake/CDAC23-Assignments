@@ -1,0 +1,22 @@
+﻿@using BLL;
+<table cellspacing="60px">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Salary</td>
+    </tr>
+    @{
+        List<Employee> empList = (List<Employee>)ViewData["emps"];
+        foreach (Employee e in empList)
+        {
+            <tr>
+                <td>@e.eid</td>
+                <td>@e.name</td>
+                <td>@e.email</td>
+                <td>@e.salary</td>
+            </tr>
+        }
+    }
+</table>
+

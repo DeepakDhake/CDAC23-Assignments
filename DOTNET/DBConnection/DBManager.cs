@@ -6,7 +6,7 @@ namespace DBConnection
 {
     public class DBManager
     {
-        public static string conn = @"server=localhost;port=3306;user=root; password=root123;database=dotnet";
+        public static string conString = @"server=localhost;port=3306;user=root; password=root123;database=dotnet";
 
         public static List<Employee> GetAll()
         {
@@ -46,7 +46,7 @@ namespace DBConnection
         public static bool AddEmployee(Employee emp)
         {
             bool status = false;
-            string query = "Insert into employee (eid,name,email,password,salary) Values( '" + emp.eid + "','"
+            string query = "Insert into emp (eid,name,email,password,salary) Values( '" + emp.eid + "','"
             + emp.name + "','" + emp.email + "','" + emp.password + "','" + emp.salary + "')";
             MySqlConnection conn = new MySqlConnection();
             conn.ConnectionString = conString;

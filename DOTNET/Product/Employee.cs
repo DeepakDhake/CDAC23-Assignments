@@ -4,6 +4,10 @@ namespace BLL
 {
     public class Employee
     {
+        public Employee()
+        {
+        }
+
         public Employee(int eid, string? name, string? email, string? password, double salary)
         {
             this.eid = eid;
@@ -13,7 +17,7 @@ namespace BLL
             this.salary = salary;
         }
 
-        public int eid { get; set; } = 0;
+        public int eid { get; set; }
         [Required]
         public string? name { get; set; }
         [Required]

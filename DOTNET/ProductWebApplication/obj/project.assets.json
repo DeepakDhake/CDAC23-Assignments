@@ -1823,9 +1823,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\CDAC23-Assignments\\DOTNET\\ProductWebApplication\\ProductWebApplication.csproj",
-      "projectName": "ProductWebApplication",
-      "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\ProductWebApplication\\ProductWebApplication.csproj",
+      "projectUniqueName": "D:\\Git\\CDAC23-Assignments\\DOTNET\\ProductWebApplication\\EmployeeWebApplication.csproj",
+      "projectName": "EmployeeWebApplication",
+      "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\ProductWebApplication\\EmployeeWebApplication.csproj",
       "packagesPath": "C:\\Users\\Sai\\.nuget\\packages\\",
       "outputPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\ProductWebApplication\\obj\\",
       "projectStyle": "PackageReference",

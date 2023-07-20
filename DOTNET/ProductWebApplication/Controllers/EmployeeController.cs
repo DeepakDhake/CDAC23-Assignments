@@ -1,6 +1,7 @@
-﻿using Emp;
+﻿using BLL;
+using DBConnection;
 using Microsoft.AspNetCore.Mvc;
-namespace ProductWebApplication.Controllers
+namespace EmployeeWebApplication.Controllers
 {
     public class EmployeeController : Controller
     {
@@ -15,15 +16,29 @@ namespace ProductWebApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddEmployee(int id, string name, string email, string password, double salary)
+        public IActionResult AddEmployee(int eid, string name, string email, string password, double salary)
         {
             Employee emp = new Employee();
-            emp.eid = id;
+            emp.eid = eid;
             emp.name = name;
             emp.email = email;
             emp.password = password;
             emp.salary = salary;
-            return RedirectToAction("List");  
+            bool status = DBManager.AddEmployee(emp);
+            if (status == true)
+            {
+                return RedirectToAction("List");  
+            }
+            else
+            {
+                return Json(emp);
+            }
+        }
+        public IActionResult List()
+        {
+            List<Employee> employees = DBManager.GetAll();
+            ViewData["emps"] = employees;
+            return View();
         }
 
     }

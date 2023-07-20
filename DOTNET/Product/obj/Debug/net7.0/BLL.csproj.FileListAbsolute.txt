@@ -1,0 +1,12 @@
+D:\Git\CDAC23-Assignments\DOTNET\Product\bin\Debug\net7.0\BLL.deps.json
+D:\Git\CDAC23-Assignments\DOTNET\Product\bin\Debug\net7.0\BLL.dll
+D:\Git\CDAC23-Assignments\DOTNET\Product\bin\Debug\net7.0\BLL.pdb
+D:\Git\CDAC23-Assignments\DOTNET\Product\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+D:\Git\CDAC23-Assignments\DOTNET\Product\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\CDAC23-Assignments\DOTNET\Product\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+D:\Git\CDAC23-Assignments\DOTNET\Product\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+D:\Git\CDAC23-Assignments\DOTNET\Product\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+D:\Git\CDAC23-Assignments\DOTNET\Product\obj\Debug\net7.0\BLL.dll
+D:\Git\CDAC23-Assignments\DOTNET\Product\obj\Debug\net7.0\refint\BLL.dll
+D:\Git\CDAC23-Assignments\DOTNET\Product\obj\Debug\net7.0\BLL.pdb
+D:\Git\CDAC23-Assignments\DOTNET\Product\obj\Debug\net7.0\ref\BLL.dll
