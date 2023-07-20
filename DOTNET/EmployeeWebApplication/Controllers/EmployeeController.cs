@@ -36,7 +36,7 @@ namespace EmployeeWebApplication.Controllers
         }
         public IActionResult List()
         {
-            List<Employee> employees = DBManager.GetAll();
+            List<Employee> employees = DBManager.GetAllEmployees();
             ViewData["emps"] = employees;
             return View();
         }

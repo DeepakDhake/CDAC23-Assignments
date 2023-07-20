@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Product\BLL.csproj" />
+    <ProjectReference Include="..\DBConnection\DBConnection.csproj" />
+    <ProjectReference Include="..\Employee\BLL.csproj" />
   </ItemGroup>
 
 </Project>

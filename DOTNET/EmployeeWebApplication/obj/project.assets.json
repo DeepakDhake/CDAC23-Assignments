@@ -548,6 +548,20 @@
         "runtime": {
           "bin/placeholder/BLL.dll": {}
         }
+      },
+      "DBConnection/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BLL": "1.0.0",
+          "MySql.Data": "8.1.0"
+        },
+        "compile": {
+          "bin/placeholder/DBConnection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DBConnection.dll": {}
+        }
       }
     }
   },
@@ -1786,13 +1800,19 @@
     },
     "BLL/1.0.0": {
       "type": "project",
-      "path": "../Product/BLL.csproj",
-      "msbuildProject": "../Product/BLL.csproj"
+      "path": "../Employee/BLL.csproj",
+      "msbuildProject": "../Employee/BLL.csproj"
+    },
+    "DBConnection/1.0.0": {
+      "type": "project",
+      "path": "../DBConnection/DBConnection.csproj",
+      "msbuildProject": "../DBConnection/DBConnection.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "BLL >= 1.0.0",
+      "DBConnection >= 1.0.0",
       "MySql.Data >= 8.1.0"
     ]
   },
@@ -1829,8 +1849,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Git\\CDAC23-Assignments\\DOTNET\\Product\\BLL.csproj": {
-              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Product\\BLL.csproj"
+            "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\DBConnection.csproj": {
+              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\DBConnection\\DBConnection.csproj"
+            },
+            "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj": {
+              "projectPath": "D:\\Git\\CDAC23-Assignments\\DOTNET\\Employee\\BLL.csproj"
             }
           }
         }

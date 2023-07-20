@@ -8,7 +8,7 @@ namespace DBConnection
     {
         public static string conString = @"server=localhost;port=3306;user=root; password=root123;database=dotnet";
 
-        public static List<Employee> GetAll()
+        public static List<Employee> GetAllEmployees()
         {
             List<Employee> list = new List<Employee>();
             MySqlConnection conn = new MySqlConnection();
