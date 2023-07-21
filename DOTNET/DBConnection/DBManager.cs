@@ -67,5 +67,50 @@ namespace DBConnection
             }
             return status;
         }
+        public static bool UpdateEmployee(Employee em)
+        {
+            bool status = false;
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = conString;
+            try
+            {
+                string query = "UPDATE emp SET email='" + em.email + "' WHERE eid=" + em.eid;
+                MySqlCommand command = new MySqlCommand(query, con);
+                con.Open();
+                command.ExecuteNonQuery();
+                status = true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return status;
+        }
+        public static bool DeleteEmp(Employee em)
+        {
+            bool status = false;
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = conString;
+            try
+            {
+                string query = "DELETE FROM emp WHERE eid=" + em.eid;
+                MySqlCommand command = new MySqlCommand(query, con);
+                con.Open();
+                command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return status;
+        }
     }
 }

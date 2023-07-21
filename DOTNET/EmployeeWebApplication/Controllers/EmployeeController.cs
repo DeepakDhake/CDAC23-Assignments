@@ -41,5 +41,48 @@ namespace EmployeeWebApplication.Controllers
             return View();
         }
 
+        public IActionResult UpdateEmployee()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult UpdateEmployee(int eid, string email)
+        {
+            Employee emp = new Employee();
+            emp.eid = eid;
+            emp.email = email;
+            bool status = DBManager.UpdateEmployee(emp);
+            if (status == true)
+            {
+                return RedirectToAction("List");
+            }
+            else
+            {
+                return RedirectToAction("List");
+            }
+        }
+
+        public IActionResult DeleteEmp()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult DeleteEmp(int eid)
+        {
+            Employee emp = new Employee();
+            emp.eid = eid;
+            bool status = DBManager.DeleteEmp(emp);
+            if (status == true)
+            {
+                return RedirectToAction("List");
+            }
+            else
+            {
+                return RedirectToAction("List");
+            }
+        }
+
     }
 }
