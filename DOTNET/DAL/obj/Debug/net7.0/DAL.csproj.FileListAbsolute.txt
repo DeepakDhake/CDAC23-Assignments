@@ -1,0 +1,15 @@
+D:\Git\CDAC23-Assignments\DOTNET\DAL\bin\Debug\net7.0\DAL.deps.json
+D:\Git\CDAC23-Assignments\DOTNET\DAL\bin\Debug\net7.0\DAL.dll
+D:\Git\CDAC23-Assignments\DOTNET\DAL\bin\Debug\net7.0\DAL.pdb
+D:\Git\CDAC23-Assignments\DOTNET\DAL\bin\Debug\net7.0\BOL.dll
+D:\Git\CDAC23-Assignments\DOTNET\DAL\bin\Debug\net7.0\BOL.pdb
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\DAL.csproj.CopyComplete
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\DAL.dll
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\refint\DAL.dll
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\DAL.pdb
+D:\Git\CDAC23-Assignments\DOTNET\DAL\obj\Debug\net7.0\ref\DAL.dll
