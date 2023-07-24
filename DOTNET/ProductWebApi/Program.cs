@@ -44,6 +44,12 @@ app.MapGet("/AllProducts", () =>
     return Results.Ok(pa.getAllProduct());
 });
 
+app.MapPost("/addProd", (Product prod) =>
+{
+    ProductApi p = new ProductApi();
+    return Results.Created($"/addProd",p.AddProduct(prod));
+});
+
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

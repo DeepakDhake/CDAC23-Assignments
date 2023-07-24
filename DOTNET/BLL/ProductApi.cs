@@ -10,5 +10,10 @@ namespace BLL
             products = DBManager.getAllProducts(); 
             return products;
         }
+        public bool AddProduct(Product newProduct)
+        {
+            DBManager.AddProduct(newProduct);  
+            return true;
+        }
     }
 }

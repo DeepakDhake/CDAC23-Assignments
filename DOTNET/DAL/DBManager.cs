@@ -42,5 +42,25 @@ namespace DAL
             finally { conn.Close(); }
         return plist;
         }
+        public static Boolean AddProduct(Product p)
+        {
+            Boolean status = false;
+            MySqlConnection conn = new MySqlConnection(dburl);
+            conn.ConnectionString = dburl;
+            try
+            {
+                conn.Open();
+                string query = "insert into product values" + "(" + p.Id + "," + "'" + p.Name + "'," + p.Qty + "," + p.Price + ")";
+                MySqlCommand cmd = new MySqlCommand(query,conn);
+                cmd.ExecuteNonQuery();
+                status = true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { conn.Close(); }
+            return status;
+        }
     }
 }
